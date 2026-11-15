@@ -20,14 +20,6 @@ videos = {
     "precipitation": "imergvar_composite_1080p15.mp4"
 }
 
-for name, filename in videos.items():
-    path = os.path.join(folder_path, filename)
-    cap = cv2.VideoCapture(path)
-
-    print(name, "—", "открыто" if cap.isOpened() else "ошибка")
-
-    cap.release()
-
 def analyze_video(video_path, sample_interval=1):
     cap = cv2.VideoCapture(video_path)
 
