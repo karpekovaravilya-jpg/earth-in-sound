@@ -107,16 +107,6 @@ def create_music_data(video_data):
         "volumes": volumes[:length]
     }
 
-sun_path = os.path.join(folder_path, videos["sun"])
-
-sun_data = analyze_video(sun_path)
-
-sun_music = create_music_data(sun_data)
-
-print("Количество нот:", len(sun_music["notes"]))
-print("Первые 10 нот:", sun_music["notes"][:10])
-print("Первые 10 длительностей:", sun_music["durations"][:10])
-
 from scipy.io.wavfile import write
 import numpy as np
 
