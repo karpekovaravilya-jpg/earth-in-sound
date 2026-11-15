@@ -12,16 +12,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import median_filter
 
-from google.colab import drive
-drive.mount('/content/drive')
-
-folder_path = "/content/drive/MyDrive/NASAApp"
-
 import os
-
-folder_path = "/content/drive/MyDrive/NASAApp"
-
-print(os.listdir(folder_path))
 
 videos = {
     "sun": "STWrolling_2048p30.mp4",
