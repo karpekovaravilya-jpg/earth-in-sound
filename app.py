@@ -335,10 +335,6 @@ print({
     for k, v in sun_music.items()
 })
 
-!pip install flask flask-cors pyngrok
-
-!pip install flask flask-cors requests
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
