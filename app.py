@@ -202,24 +202,6 @@ def generate_audio(
 
     return filename
 
-from IPython.display import Audio, display
-
-for instrument in ["piano", "synth", "strings", "bell"]:
-
-    print("Инструмент:", instrument)
-
-    audio_file = generate_audio(
-        sun_music,
-        filename=f"sun_{instrument}.wav",
-        instrument=instrument
-    )
-
-    display(Audio(filename=audio_file))
-
-from IPython.display import Audio, display
-
-display(Audio("sun_music.wav"))
-
 nitrogen_path = os.path.join(folder_path, videos["nitrogen"])
 precipitation_path = os.path.join(folder_path, videos["precipitation"])
 
